@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.nav-container {
+    background-color: black;
+    width: 100vw;
+    height: 50px;
+}
+    
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: flex;
+    position: fixed;
+    transform: translateX(-50%);
+    --position-offset: 0;
+    left: var(--position-offset);
+    margin: 5px 5px;
+    padding: 5px;
+    list-style-type: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+nav ul li:hover {
+    color: red;
+}
+
+nav ul li:nth-child(1) {
+    --position-offset: 44%;
+}
+nav ul li:nth-child(2) {
+    --position-offset: 50%;
+}
+nav ul li:nth-child(3) {
+    --position-offset: 55%;
+}
+nav ul li:nth-child(4) {
+    --position-offset: 60%;
+}
+
+.font-s{
+    font-size: 24px;
+}
+
+@media screen and (max-width: 1400px) {
+    nav ul li:nth-child(1) {
+        --position-offset: 40%;
+    }
+    nav ul li:nth-child(2) {
+        --position-offset: 50%;
+    }
+    nav ul li:nth-child(3) {
+        --position-offset: 58%;
+    }
+    nav ul li:nth-child(4) {
+        --position-offset: 67%;
+    }
+    nav ul li {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 842px) {
+    nav ul li {
+        margin: 10px 5px; /* Змінюємо відступи для кращого розташування на мобільних пристроях */
+        font-size: 12px;
+    }
+    nav ul li:nth-child(1) {
+        --position-offset: 18%;
+    }
+    nav ul li:nth-child(2) {
+        --position-offset: 43%;
+    }
+    nav ul li:nth-child(3) {
+        --position-offset: 63%;
+    }
+    nav ul li:nth-child(4) {
+        --position-offset: 83%;
+    }
+}
+
+.font-fam {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gray {
+    color: #6d6c6c;
+}
+
+.bg-color {
+    background-color: #6d6c6c;
+}
+
+::-webkit-scrollbar {
+    display: none; /* Приховати полосу прокрутки в WebKit браузерах */
+}
+
+.font-w400 {
+    font-weight: 400;
+}
+
+.option {
+    width: 90px;
+    height: 40px;
+    margin: 60px 10px 10px 5px;
+    padding: 5px;
+    border: solid 3px gray;
+    font-size: 15px;
+    transition: 0.2s ease all;
+}
+
+.option:hover {
+    border-color: black;
+}
+
+
+.opt {
+   border: 1px solid black; 
+}
+
+.labSource {
+    margin: 50px 5px 5px 5px ;
+}
+
+.myContact {
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myContact img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    transition: 0.5s all ease-in-out;
+}
+
+.myContact img:hover {
+    width: 60px;
+    height: 60px;
+}

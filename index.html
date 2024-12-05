@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/FinanceNotebook/CSS/style.css" />
+    <link rel="stylesheet" href="/FinanceNotebook/CSS/statistic.css" />
+    <link rel="stylesheet" href="/FinanceNotebook/CSS/income.css" />
+    <link rel="stylesheet" href="/FinanceNotebook/CSS/costs.css" />
+    <link rel="stylesheet" href="/FinanceNotebook/CSS/settings.css" />
+    <link rel="icon" type="image/svg+xml" href="/FinanceNotebook/4634987_notebook_device_mac_money_pc_icon.svg">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="nav-container">
+      <nav>
+        <ul id="nav-list">
+          <li class="font-fam font-s gray">Statistic</li>
+          <li class="font-fam font-s gray">Income</li>
+          <li class="font-fam font-s gray">Costs</li>
+          <li class="font-fam font-s gray">Settings</li>
+        </ul>
+      </nav>
+    </div>
+    <section class="settings">
+      <div id="sett">
+        <button class="remove font-fam font-w400">Delete data from all charts</button>
+        <label for="changeSource" class="chartSource font-fam font-s font-w400">Select the type of income and expense schedule:</label>
+        <select id="changeSource" class="options font-w400">
+          <option class="opts font-fam font-w400" value="pie">Pie</option>
+          <option class="opts font-fam font-w400" value="bar">Bar</option>
+          <option class="opts font-fam font-w400" value="line">Line</option>
+          <option class="opts font-fam font-w400" value="doughnut">Doughnut</option>
+          <option class="opts font-fam font-w400" value="polarArea">Polar Area</option>
+        </select>
+        <button class="change font-fam font-w400">Change</button>
+      </div>
+    </section>
+    
+    <section class="statistic">
+      <div class="canv-stat">
+        <div class="information"></div>
+        <canvas id="chartStatistic"></canvas>
+      </div>
+    </section>
+    
+      <section class="inCome">
+        <div class="inp-cont">
+          <input
+            type="number"
+            class="inMoney font-fam"
+            placeholder="Enter your income"
+          />
+          <div class="opt-container">
+            <label
+              for="incomeSource"
+              class="labSource font-fam font-s font-w400"
+              >Select income source:</label
+            >
+            <select id="incomeSource" class="option font-w400">
+              <option class="opt font-fam font-w400" value="salary">
+                Salary
+              </option>
+              <option class="opt font-fam font-w400" value="deposit">
+                Deposit
+              </option>
+              <option class="opt font-fam font-w400" value="savings">
+                Savings
+              </option>
+              <option class="opt font-fam font-w400" value="other">
+                Other
+              </option>
+            </select>
+            <div class="butt-container">
+              <button class="act-chart font-fam font-w400">Add</button>
+              <button class="del-chart font-fam font-w400">Remove</button>
+            </div>
+          </div>
+        </div>
+        <div class="canv-cont">
+          <canvas id="myChart"></canvas>
+        </div>
+      </section>
+
+      <section class="costs">
+        <div class="inp-cont">
+          <input
+            type="number"
+            class="outMoney font-fam"
+            placeholder="Enter your expenses"
+          />
+          <div class="opt-container">
+            <label for="costsSource" class="labSource font-fam font-s font-w400"
+              >Select the cost source:</label
+            >
+            <select id="costsSource" class="option font-w400">
+              <option class="opt font-fam font-w400" value="Food">Food</option>
+              <option class="opt font-fam font-w400" value="Car">Car</option>
+              <option class="opt font-fam font-w400" value="Public transport">
+                Public transport
+              </option>
+              <option class="opt font-fam font-w400" value="Clothes">
+                Сlothes
+              </option>
+              <option class="opt font-fam font-w400" value="Utilities">
+                Utilities
+              </option>
+              <option class="opt font-fam font-w400" value="Housing fee">
+                Housing fee
+              </option>
+              <option class="opt font-fam font-w400" value="Anything">
+                Anything
+              </option>
+            </select>
+            <div class="butt-container">
+              <button class="plus-chart font-fam font-w400">Add</button>
+              <button class="remove-chart font-fam font-w400">Remove</button>
+            </div>
+          </div>
+        </div>
+        <div class="canv-cost">
+          <canvas id="chartCosts"></canvas>
+        </div>
+      </section>
+
+      <footer class="myContact">
+        <a target="_blank" href="https://t.me/Noname21145"> <img src="/FinanceNotebook/4102591_applications_media_social_telegram_icon.svg" alt="Telegram" ></a>
+        <a target="_blank" href="https://www.instagram.com/bogdanparkhomov"> <img src="/FinanceNotebook/6636603_instagram_social media_social network_icon.svg" alt="Instagram" ></a>
+        <a target="_blank" href="https://www.linkedin.com/in/bohdan-parkhomov-35245b340/"> <img src="/FinanceNotebook/4102586_applications_linkedin_social_social media_icon.svg" 
+          alt="Linkedin" ></a>
+        <a target="_blank" href="https://github.com/Parkhomov"> <img src="/FinanceNotebook/7857148_github_programming_code_hub_git_icon.svg" 
+          alt="Github" ></a>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/FinanceNotebook/JS/app.js"></script>
+    <script type="module" src="/FinanceNotebook/JS/income.js"></script>
+    <script type="module" src="/FinanceNotebook/JS/costs.js"></script>
+    <script src="/FinanceNotebook/JS/setting.js"></script>
+    <script type="module" src="/FinanceNotebook/JS/statistic.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,70 @@
+.settings {
+   display: none;
+}
+
+#sett {
+    width: 20%;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+@media screen and (max-width: 1110px) {
+    #sett {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 768px) {
+    #sett {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 560px) {
+    #sett {
+        width: 70%;
+    }
+}
+
+.remove {
+    width: 190px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(145deg, #cb9b9b, #cb2020); 
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.2); 
+    margin: 10px;
+}
+
+.options {
+    width: 90px;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    border: solid 3px gray;
+    font-size: 15px;
+    transition: 0.2s ease all;
+}
+.options:hover {
+    border-color: black;
+}
+.opts {
+    border: 1px solid black; 
+}
+
+.chartSource {
+    margin: 10px;
+}
+
+.change {
+    margin: 10px;
+    width: 80px;
+    height: 40px;
+    font-size: 18px;
+    background-color: rgb(54, 216, 54);
+}
+

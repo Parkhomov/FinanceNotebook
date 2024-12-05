@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.costs {  
+    width: 100vw;
+    height: auto;
+    background-color: rgb(237, 237, 237);
+    margin: 5px;
+}
+
+#chartCosts {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 80vh;
+    /* margin: 5px 25px 15px 5px; */
+}
+
+.outMoney {
+    width: 220px;
+    height: 36px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 60px 15px 10px 10px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.plus-chart {
+    font-size: 18px;
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+    font-size: 18px;
+    width: 100px;
+    background-color: lightgrey;
+    position: relative;
+    top: 20px;
+}
+
+@media screen and (max-width: 519px) {
+    .plus-chart {
+        position: relative;
+        top: 15px;
+    }
+}
+
+.remove-chart {
+    margin: 20px;
+    margin-left: 0px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+    font-size: 18px;
+    width: 100px;
+    background-color: lightgrey;
+    position: relative;
+    top: 20px;
+}
+.remove-chart:hover {
+    background-color: rgb(203, 69, 69);
+}
+
+.plus-chart:hover {
+    background-color: green;
+}
+@media screen and (max-width: 519px) {
+  .remove-chart {
+    position: relative;
+    top: 15px;
+  }
+}

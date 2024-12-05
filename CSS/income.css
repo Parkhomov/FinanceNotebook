@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.inCome {  
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    margin: 5px;
+}
+
+.inMoney {
+    width: 220px;
+    height: 36px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 60px 15px 10px 10px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 803px) {
+    .inMoney {
+        margin: 46px 15px 0px 10px;
+    }
+}
+
+.inp-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+.act-chart {
+    font-size: 18px;
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+    font-size: 18px;
+    width: 100px;
+    background-color: lightgrey;
+    position: relative;
+    top: 20px;
+}
+
+@media screen and (max-width: 519px) {
+    .act-chart {
+        position: relative;
+        top: 15px;
+    }
+}
+
+.del-chart {
+    margin: 20px;
+    margin-left: 0px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+    font-size: 18px;
+    width: 100px;
+    background-color: lightgrey;
+    position: relative;
+    top: 20px;
+}
+
+@media screen and (max-width: 519px) {
+  .del-chart {
+    position: relative;
+    top: 15px;
+  }
+}
+
+.butt-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.opt-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.del-chart:hover {
+    background-color: rgb(203, 69, 69);
+}
+
+.act-chart:hover {
+    background-color: green;
+}
+
+.inCome .canv-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myChart {
+    width: 100% !important;
+    height: auto !important;
+    margin: 5px 25px 15px 5px;
+    max-height: 80vh;
+}
+    
+
